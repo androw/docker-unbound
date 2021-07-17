@@ -9,5 +9,4 @@ RUN chown -R unbound:unbound /usr/local/etc/unbound/
 EXPOSE 53
 EXPOSE 53/udp
 
-CMD ["/bin/sh"]
 CMD ["/usr/sbin/unbound", "-d", "-v"]
