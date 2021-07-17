@@ -3,6 +3,8 @@ name: Build tagged image
 on:
   push:
     tags:
+    tags-ignore:
+      - master
 
 jobs:
   build:
